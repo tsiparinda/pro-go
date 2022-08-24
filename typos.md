@@ -29,6 +29,12 @@ The name of the second variable is `salesPerson`, with an uppercase `P`.
 
 ---
 
+On page 83 and subsequent pages, references to the the `nil` type have been omitted from the index.
+
+(Thanks to Edwin Majnoonian for reporting this problem)
+
+---
+
 **Chapter 5**
 
 On page 102, Table 5-7 contains the following text in the description for the `Floor` function:
@@ -99,6 +105,11 @@ These statements should include a colon, like this:
 
 **Chapter 8**
 
+On page 199, Figure 8-3 incorrectly describes the parameter types of the printPrice function as values. The word **Value** in the figure should read **Type**.
+
+(Thanks to Edwin Majnoonian for reporting this problem)
+
+---
 
 On page 206, the paragraph following Listing 8-14 contains the following sentence:
 
@@ -245,12 +256,79 @@ should be:
 
 **Chapter 16**
 
+On page 415, the description of the EqualFold function in `Table 16-3` should be:
+
+>   This function performs a case-insensitive comparison and returns true ***if*** strings s1 and s2 are the same.
+
+(Thanks to Tawfik Khalifeh for reporting this problem)
+
+---
+
+On page 417, the description for the ToUpper function in `Table 16-4` should be:
+
+
+>   This function returns a new string containing the characters in the specified string mapped to ***uppercase***.
+
+(Thanks to Tawfik Khalifeh for reporting this problem)
+
+----
+
+On page 417, the description for the Title function in `Table 16-4` is incorrect. The first character of each word is transformed, but the remaining characters are left unchanged.
+
+(Thanks to Tawfik Khalifeh for reporting this problem)
+
+---
+
 On page 417, Table 16-4 gives the impression that the `Title` function transforms a string value, rather than creating a new string.
 
 (Thanks to Francisco Vicedo for reporting this problem)
 
 ---
 
-On Page 421, Listing 16-8 contains two statements that use the `LastIndex` function and omits the `LastIndexAny` function.
+On page 421, Listing 16-8 contains two statements that use the `LastIndex` function and omits the `LastIndexAny` function.
 
 (Thanks to Francisco Vicedo for reporting this problem)
+
+---
+
+On page 434, this sentence:
+
+> The strings package provides the Builder type, which has not exported fields but does provide a set of 
+methods that can be used to efficiently build strings gradually, as described in Table 16-12.
+
+should be:
+
+>   The strings package provides the Builder type, which has ***no*** exported fields but does provide a set of 
+methods that can be used to efficiently build strings gradually, as described in Table 16-12.
+
+(Thanks to Tawfik Khalifeh for reporting this problem)
+
+---
+
+On page 434, the description for the Grow function in `Table 16-12` should be:
+
+>   This method increases the number of bytes ***~~used~~*** allocated by the builder to store the string that is being built.
+
+(Thanks to Tawfik Khalifeh for reporting this problem)
+
+---
+
+On page 458, this sentence:
+
+>   I added chevrons around the formatted value in Listing 17-13 to demonstrate that spaces are used for 
+padding when the specified with is greater than the number of characters required to display the value.
+
+should be:
+
+>   I added chevrons around the formatted value in Listing 17-13 to demonstrate that spaces are used for 
+padding when the specified ***width*** is greater than the number of characters required to display the value.
+
+(Thanks to Tawfik Khalifeh for reporting this problem)
+
+---
+
+**Chapter 34**
+
+On page 928, the first sentence in the ***Updating Request Handling*** section specifies the wrong location for the file. It should be the `http/handling` folder, as described in the caption for `Listing 34-13`.
+
+(Thanks to Yaroslav Lazarev for reporting this problem)
